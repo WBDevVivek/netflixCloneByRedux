@@ -18,6 +18,32 @@ import SignUp from "./SignUp";
 
 import { animatedCardSecApi, QueAnsData } from "../APInetflix";
 
+
+// ------------inline Style for backgroup header img--------------
+
+
+const headerStyleForHero = {
+  backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.9) 100%), 
+  url(${process.env.PUBLIC_URL}/img/forHomePageData/heroBackImg.jpg)`
+};
+
+
+const headerStyleForLogIn = {
+  backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.9) 100%), 
+  url(${process.env.PUBLIC_URL}/img/forHomePageData/logInBackImg.jpg)`
+};
+
+
+// ------------inline Style for backgroup header img--------------
+
+
+
+
+
+
+
+
+
 function HomePage({ result, forTrialHome }) {
   // -------------------------------------------------------------------------------------
 
@@ -46,9 +72,12 @@ function HomePage({ result, forTrialHome }) {
         <header
           className={
             !stateForLogo
-              ? "card95DivForNFCloneHeader headerBackImg1"
-              : "card95DivForNFCloneHeader headerBackImg2"
+              ? `card95DivForNFCloneHeader headerBackImg1`
+              : `card95DivForNFCloneHeader headerBackImg2`
           }
+
+          style={!stateForLogo ? headerStyleForHero : headerStyleForLogIn}
+
         >
           <div className="forLogo">
             <LogoC backToHome={() => dispatch(backToHome())} />

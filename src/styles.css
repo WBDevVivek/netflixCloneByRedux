@@ -32,7 +32,7 @@ a {
   border-bottom: 8px solid #222;
 }
 
-.headerBackImg1 {
+/* .headerBackImg1 {
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8) 0%,
@@ -60,7 +60,46 @@ a {
       rgba(0, 0, 0, 0.9) 100%
     ),
     url(https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/netFlixProject%2FhomeLogo%26Back%2FbackImg.jpg?alt=media&token=74eac2f9-0048-45bd-bdaa-ad3381af9867);
+} */
+
+
+
+
+.headerBackImg1 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    /* url(/img/forHomePageData/heroBackImg.jpg); */
+    /* url("/img/forHomePageData/heroBackImg.jpg"); */
 }
+
+.headerBackImg2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    /* url(/img/forHomePageData/logInBackImg.jpg); */
+    /* url("/img/forHomePageData/logInBackImg.jpg"); */
+}
+
+.headerBackImg3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    /* url(/img/forHomePageData/logInBackImg.jpg); */
+    /* url("/img/forHomePageData/logInBackImg.jpg"); */
+}
+
+
+
 
 .forLogo {
   width: 100%;
